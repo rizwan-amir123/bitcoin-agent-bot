@@ -18,7 +18,7 @@ The core framework is built entirely with decoupled separation of concerns, avoi
 ---
 
 ## 🧭 System Architecture Diagram
-
+```text
 Data Layer (ccxt + SQLite)
         ↓
 Technical Agent (SMA / RSI)
@@ -32,6 +32,7 @@ Risk Manager (Decision Engine)
 Backtesting Ledger (SQLite DB)
         ↓
 Streamlit Dashboard
+```
 
 ## 📊 Key Features
 
