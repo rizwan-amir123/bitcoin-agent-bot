@@ -19,22 +19,19 @@ The core framework is built entirely with decoupled separation of concerns, avoi
 
 ## 🧭 System Architecture Diagram
 
-```mermaid
-graph TD
-    Data[Data Layer - ccxt + SQLite]
-    TA[Technical Agent - SMA/RSI]
-    SA[Sentiment Agent - Gemini AI]
-    RM[Risk Manager Agent]
-    DB[(Backtesting Ledger)]
-    UI[Streamlit Dashboard]
-
-    Data --> TA
-    Data --> SA
-    TA --> RM
-    SA --> RM
-    RM --> DB
-    DB --> UI
-```
+Data Layer (ccxt + SQLite)
+        ↓
+Technical Agent (SMA / RSI)
+        ↓
++-----------------------------+
+| Sentiment Agent (Gemini AI)|
++-----------------------------+
+        ↓
+Risk Manager (Decision Engine)
+        ↓
+Backtesting Ledger (SQLite DB)
+        ↓
+Streamlit Dashboard
 
 ## 📊 Key Features
 
