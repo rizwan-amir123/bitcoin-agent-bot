@@ -83,7 +83,9 @@ pip install -r requirements.txt
 
 Create a .env file at the root of the project folder:
 
+```bash
 GEMINI_API_KEY="your_free_google_ai_studio_api_key_here"
+```
 
 5. Initialize Data & Start the Dashboard
 
